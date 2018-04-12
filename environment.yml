@@ -6,3 +6,9 @@ dependencies:
   - pip:
     - pyquil
     - quantum-grove
+    - numpy
+    - scipy
+    - cython
+    - cvxpy
+    - tqdm
+    - qutip
