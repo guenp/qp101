@@ -1,4 +1,2 @@
 pyquil
 quantum-grove
-matplotlib
-numpy
