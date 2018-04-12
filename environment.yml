@@ -3,6 +3,7 @@ channels:
   - defaults
 dependencies:
   - matplotlib
+  - qutip
   - pip:
     - pyquil
     - quantum-grove
@@ -11,4 +12,3 @@ dependencies:
     - cython
     - cvxpy
     - tqdm
-    - qutip
