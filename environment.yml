@@ -4,6 +4,7 @@ channels:
 dependencies:
   - matplotlib
   - qutip
+  - lmfit
   - pip:
     - pyquil
     - quantum-grove
