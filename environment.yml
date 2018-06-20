@@ -8,5 +8,5 @@ dependencies:
   - pip:
     - pyquil
     - quantum-grove
-    - cvxpy
+    - cvxpy==0.4.11
     - tqdm
