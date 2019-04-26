@@ -1,3 +1,4 @@
+name: qp101
 channels:
   - conda-forge
   - defaults
