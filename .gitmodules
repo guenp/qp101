@@ -1,0 +1,6 @@
+[submodule "Quantum"]
+	path = Quantum
+	url = https://github.com/Microsoft/Quantum.git
+[submodule "qiskit-tutorials"]
+	path = qiskit-tutorials
+	url = https://github.com/Qiskit/qiskit-tutorials.git
