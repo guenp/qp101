@@ -67,4 +67,11 @@ ENV PATH=$PATH:${HOME}/dotnet:${HOME}/.dotnet/tools \
 RUN dotnet tool install -g Microsoft.Quantum.IQSharp
 RUN dotnet iqsharp install --user --path-to-tool="${HOME}/.dotnet/tools/dotnet-iqsharp"
 
+# Make sure the contents of our repo are in ${HOME}
+# Required for mybinder.org
+COPY . ${HOME}
+USER root
+RUN chown -R ${NB_UID} ${HOME}
+USER ${NB_USER}
+
 EXPOSE 8888
