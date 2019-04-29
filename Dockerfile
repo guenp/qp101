@@ -67,6 +67,11 @@ ENV PATH=$PATH:${HOME}/dotnet:${HOME}/.dotnet/tools \
 RUN dotnet tool install -g Microsoft.Quantum.IQSharp
 RUN dotnet iqsharp install --user --path-to-tool="${HOME}/.dotnet/tools/dotnet-iqsharp"
 
+USER root
+RUN apt-get -y install graphviz libgraphviz-dev
+RUN pip install pygraphviz
+RUN pip install pandas
+
 # Make sure the contents of our repo are in ${HOME}
 # Required for mybinder.org
 COPY . ${HOME}
