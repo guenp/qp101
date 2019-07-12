@@ -8,4 +8,4 @@ This repo contains some demo notebooks for getting started with programming quan
 *Dependencies*: [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
 To build the docker image, run `docker build -t qp101 .` in the root directory.
-To start Jupyter notebook in the docker container, run `./start.sh <port> <token>`, where `<port>` is your preferred port for the notebooks (default: `8448`) and `<token>` is the secret token for your notebook server (default: `quantum`).
+To start Jupyter notebook in the docker container, run `./start.sh <port> <token>`, where `<port>` is your preferred port for the notebooks (default: `8888`) and `<token>` is the secret token for your notebook server (default: `quantum`).
